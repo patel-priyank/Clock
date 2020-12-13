@@ -9,5 +9,5 @@ const secondsSpan = document.querySelector('#clock-seconds');
   minutesSpan.innerHTML = currentTime.getMinutes().toString().padStart(2, '0');
   secondsSpan.innerHTML = currentTime.getSeconds().toString().padStart(2, '0');
 
-  setTimeout(arguments.callee, 1);
+  setTimeout(arguments.callee, 10);
 })();
