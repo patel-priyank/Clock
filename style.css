@@ -29,6 +29,14 @@ body {
   cursor: default;
 }
 
+.github {
+  font-size: 1.5rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
 /* Media Query: Tablet or smaller */
 @media screen and (max-width: 1000px) {
   #clock-text {

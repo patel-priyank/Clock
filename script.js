@@ -1,6 +1,11 @@
 const hoursSpan = document.querySelector('#clock-hours');
 const minutesSpan = document.querySelector('#clock-minutes');
 const secondsSpan = document.querySelector('#clock-seconds');
+const github = document.querySelector('#github');
+
+github.addEventListener('click', () => {
+  window.open('https://github.com/patel-priyank/Clock');
+});
 
 (function () {
   var currentTime = new Date();
