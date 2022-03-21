@@ -9,8 +9,8 @@ I tried a few websites, but something always stuck out like a sore thumb. Ads, w
 **Upcoming features (with no ETA):**
 
 - Switch between 24-hour and 12-hour
-- Hide seconds
+- ~~Hide seconds~~
 - Change timezone
-- Switch between dark and light theme
+- ~~Switch between dark and light theme~~
 
 You can try the clock [here](https://patel-priyank.github.io/Clock/) (opens in the same tab), and if you have any suggestions, you can [email me](mailto:patel23priyank@gmail.com). Any and all suggestions are welcome. 😊
