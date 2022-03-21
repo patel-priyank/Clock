@@ -29,12 +29,43 @@ body {
   cursor: default;
 }
 
-.github {
+.settings {
   font-size: 1.5rem;
   position: fixed;
   bottom: 1rem;
   right: 1rem;
   cursor: pointer;
+}
+
+.settings-dialog {
+  max-width: 50ch;
+}
+
+.browse-code {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.browse-code a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.settings-container {
+  text-align: left;
+}
+
+.settings-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.settings-close {
+  border: none;
+  padding: 0.5rem 1rem;
+  font: inherit;
+  cursor: pointer;
+  background-color: #0d0d0d;
+  color: #cccccc;
 }
 
 /* Media Query: Tablet or smaller */

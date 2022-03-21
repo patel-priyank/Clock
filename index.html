@@ -21,9 +21,24 @@
       <span id="clock-seconds"></span>
     </div>
 
-    <span class="github" id="github" title="Browse code">
-      <i class="bi bi-github"></i>
+    <span class="settings" id="settings" title="Settings">
+      <i class="bi bi-gear"></i>
     </span>
+
+    <dialog class="settings-dialog" id="settings-dialog">
+      <div class="settings-container">
+        <input type="checkbox" id="dark-mode" name="dark-mode">
+        <label for="dark-mode">Dark Mode</label><br>
+        <input type="checkbox" id="show-seconds" name="show-seconds">
+        <label for="show-seconds">Show Seconds</label><br>
+      </div>
+
+      <div class="browse-code" id="browse-code">
+        <a href="https://github.com/patel-priyank/Clock" target="_blank"><i class="bi bi-github"></i> Browse Code</a>
+      </div>
+      
+      <button class="settings-close" id="settings-close">Done</button>
+    </dialog>
 
     <!-- Script -->
     <script src="./script.js"></script>
