@@ -4,7 +4,7 @@ const secondsSpan = document.querySelector('#clock-seconds');
 const settings = document.querySelector('#settings');
 const settingsDialog = document.querySelector('#settings-dialog');
 
-// const darkMode = document.querySelector('#dark-mode');
+const darkMode = document.querySelector('#dark-mode');
 // const showSeconds = document.querySelector('#show-seconds');
 const settingsClose = document.querySelector('#settings-close');
 
@@ -29,3 +29,35 @@ settingsClose.addEventListener('click', () => {
 
   setTimeout(arguments.callee, 10);
 })();
+
+//#region Theming
+
+if (localStorage.getItem('darkMode') === 'false') {
+  darkMode.checked = false;
+  setDarkModeOff();
+} else {
+  darkMode.checked = true;
+  setDarkModeOn();
+}
+
+darkMode.addEventListener('change', () => {
+  if (darkMode.checked) {
+    localStorage.setItem('darkMode', true);
+    setDarkModeOn();
+  } else {
+    localStorage.setItem('darkMode', false);
+    setDarkModeOff();
+  }
+});
+
+function setDarkModeOn() {
+  document.body.style.backgroundColor = 'hsl(0, 0%, 5%)';
+  document.body.style.color = 'hsl(0, 0%, 80%)';
+}
+
+function setDarkModeOff() {
+  document.body.style.backgroundColor = 'hsl(0, 0%, 95%)';
+  document.body.style.color = 'hsl(0, 0%, 20%)';
+}
+
+//#endregion
