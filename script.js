@@ -14,5 +14,9 @@ github.addEventListener('click', () => {
   minutesSpan.innerHTML = currentTime.getMinutes().toString().padStart(2, '0');
   secondsSpan.innerHTML = currentTime.getSeconds().toString().padStart(2, '0');
 
+  var httpRequest = new XMLHttpRequest();
+  httpRequest.open('GET', '/#');
+  httpRequest.send(null);
+
   setTimeout(arguments.callee, 10);
 })();
