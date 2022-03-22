@@ -3,7 +3,7 @@ const minutesSpan = document.querySelector('#clock-minutes');
 const secondsSpan = document.querySelector('#clock-seconds');
 const periodSpan = document.querySelector('#clock-period');
 const settings = document.querySelector('#settings');
-const settingsDialog = document.querySelector('#settings-dialog');
+const settingsWindow = document.querySelector('#settings-window');
 
 const darkMode = document.querySelector('#dark-mode');
 const showSeconds = document.querySelector('#show-seconds');
@@ -11,11 +11,11 @@ const clock24Hour = document.querySelector('#clock-24-hour');
 const settingsClose = document.querySelector('#settings-close');
 
 settings.addEventListener('click', () => {
-  settingsDialog.showModal();
+  settingsWindow.style.display = 'flex';
 });
 
 settingsClose.addEventListener('click', () => {
-  settingsDialog.close();
+  settingsWindow.style.display = 'none';
 });
 
 (function () {
