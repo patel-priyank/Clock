@@ -16,9 +16,12 @@
   </head>
 
   <body>
-    <div id="clock-text">
-      <span id="clock-hours"></span>:<span id="clock-minutes"></span>
-      <span id="clock-seconds"></span>
+    <div>
+      <div id="clock-main">
+        <span id="clock-hours"></span>:<span id="clock-minutes"></span>
+      </div>
+      <div id="clock-seconds"></div>
+      <div id="clock-period"></div>
     </div>
 
     <span class="settings" id="settings" title="Settings">
@@ -31,6 +34,8 @@
         <label for="dark-mode">Dark Mode</label><br>
         <input type="checkbox" id="show-seconds" name="show-seconds">
         <label for="show-seconds">Show Seconds</label><br>
+        <input type="checkbox" id="clock-24-hour" name="clock-24-hour">
+        <label for="clock-24-hour">24-Hour Clock</label><br>
       </div>
 
       <div class="browse-code" id="browse-code">
