@@ -8,7 +8,7 @@ I tried a few websites, but something always stuck out like a sore thumb. Ads, w
 
 **Upcoming features (with no ETA):**
 
-- Switch between 24-hour and 12-hour
+- ~~Switch between 24-hour and 12-hour~~
 - ~~Hide seconds~~
 - Change timezone
 - ~~Switch between dark and light theme~~
