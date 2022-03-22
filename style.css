@@ -12,11 +12,14 @@ body {
 
   color: hsl(0, 0%, 80%);
   font-family: 'Source Code Pro', monospace;
-  font-weight: bold;
   text-align: center;
   display: flex;
   align-items: center; /* center vertically */
   justify-content: center; /* center horizontally */
+}
+
+#clock {
+  font-weight: bold;
 }
 
 #clock-main {
