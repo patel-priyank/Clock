@@ -21,7 +21,7 @@ settingsClose.addEventListener('click', () => {
 (function () {
   var currentTime = new Date();
 
-  if (localStorage.getItem('clock24Hour') === 'false') {
+  if (localStorage.getItem('clock-24h') === 'false') {
     if (currentTime.getHours() === 0) {
       hoursSpan.innerHTML = '12';
     } else if (currentTime.getHours() > 12) {
@@ -46,7 +46,7 @@ settingsClose.addEventListener('click', () => {
 
 //#region Theming
 
-if (localStorage.getItem('darkMode') === 'false') {
+if (localStorage.getItem('clock-dark') === 'false') {
   darkMode.checked = false;
   setDarkModeOff();
 } else {
@@ -56,10 +56,10 @@ if (localStorage.getItem('darkMode') === 'false') {
 
 darkMode.addEventListener('change', () => {
   if (darkMode.checked) {
-    localStorage.setItem('darkMode', true);
+    localStorage.setItem('clock-dark', true);
     setDarkModeOn();
   } else {
-    localStorage.setItem('darkMode', false);
+    localStorage.setItem('clock-dark', false);
     setDarkModeOff();
   }
 });
@@ -78,7 +78,7 @@ function setDarkModeOff() {
 
 //#region Show seconds
 
-if (localStorage.getItem('showSeconds') === 'false') {
+if (localStorage.getItem('clock-seconds') === 'false') {
   showSeconds.checked = false;
   secondsSpan.style.display = 'none';
 } else {
@@ -88,10 +88,10 @@ if (localStorage.getItem('showSeconds') === 'false') {
 
 showSeconds.addEventListener('change', () => {
   if (showSeconds.checked) {
-    localStorage.setItem('showSeconds', true);
+    localStorage.setItem('clock-seconds', true);
     secondsSpan.style.display = '';
   } else {
-    localStorage.setItem('showSeconds', false);
+    localStorage.setItem('clock-seconds', false);
     secondsSpan.style.display = 'none';
   }
 });
@@ -100,7 +100,7 @@ showSeconds.addEventListener('change', () => {
 
 //#region 24-Hour Clock
 
-if (localStorage.getItem('clock24Hour') === 'false') {
+if (localStorage.getItem('clock-24h') === 'false') {
   clock24Hour.checked = false;
   periodSpan.style.display = '';
 } else {
@@ -110,10 +110,10 @@ if (localStorage.getItem('clock24Hour') === 'false') {
 
 clock24Hour.addEventListener('change', () => {
   if (clock24Hour.checked) {
-    localStorage.setItem('clock24Hour', true);
+    localStorage.setItem('clock-24h', true);
     periodSpan.style.display = 'none';
   } else {
-    localStorage.setItem('clock24Hour', false);
+    localStorage.setItem('clock-24h', false);
     periodSpan.style.display = '';
   }
 });
